@@ -1,0 +1,11 @@
+@import "../scss/variables";
+@import "../scss/media";
+
+.home-page {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

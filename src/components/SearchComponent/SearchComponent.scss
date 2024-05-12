@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+@import "../../scss/media";
+
+.search-input-wrapper {
+  fieldset {
+    border: none !important;
+  }
+
+  .MuiInputBase-root {
+    background-color: $white;
+    border-radius: 5px;
+    height: 42px;
+
+    input.MuiInputBase-input {
+      font-family: var(--cairo-font) !important;
+      height: 0;
+      background-color: inherit !important;
+    }
+
+    .MuiSvgIcon-root {
+      color: $text-light-gray;
+    }
+  }
+}

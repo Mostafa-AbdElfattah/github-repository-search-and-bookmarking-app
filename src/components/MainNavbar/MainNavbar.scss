@@ -1,0 +1,44 @@
+@import "../../scss/variables";
+@import "../../scss/media";
+
+.main-nav {
+  &.MuiAppBar-root {
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: none;
+
+    .MuiToolbar-root {
+      padding: 20px 0;
+    }
+
+    .MuiButtonBase-root {
+      color: $text-light-gray;
+    }
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+  }
+
+  .links {
+    a {
+      color: $text-light-gray!important;
+      margin: 0 20px;
+      &.active {
+        color: $white !important;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mobile-drawer{
+  .MuiDrawer-paper{
+    background-color: $black;
+    color: $white;
+    a{
+      color: $white;
+    }
+  }
+}

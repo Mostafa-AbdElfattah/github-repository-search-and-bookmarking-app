@@ -1,0 +1,70 @@
+$widthValues: ("10%",
+  "20%",
+  "23%",
+  "30%",
+  "33%",
+  "40%",
+  "50%",
+  "55%",
+  "60%",
+  "70%",
+  "80%",
+  "85%",
+  "90%",
+  "100%"
+);
+
+// different width sizes
+@each $widthVal in $widthValues {
+  .w-#{str-replace($widthVal, "%", $replace: "")} {
+    width: #{$widthVal};
+  }
+}
+
+$sizes: (
+  10,
+  11,
+  12,
+  14,
+  15,
+  16,
+  17,
+  18,
+  20,
+  22,
+  24,
+  26,
+  28,
+  30,
+  32,
+  36,
+  40,
+  50,
+  55,
+  55
+);
+
+@each $size in $sizes {
+  .fsize-#{$size} {
+    font-size: ($size / 16) + rem !important;
+  }
+}
+
+
+
+$weights: (400, 500, 600, 700);
+
+@each $weight in $weights {
+  .fweight-#{$weight} {
+    font-weight: $weight !important;
+  }
+}
+
+$borderRadiuses: (4, 8, 10, 12, 14, 16, 18, 19, 20);
+
+@each $radius in $borderRadiuses {
+  .border-radius-#{$radius} {
+    border-radius: $radius + px !important;
+  }
+}
+

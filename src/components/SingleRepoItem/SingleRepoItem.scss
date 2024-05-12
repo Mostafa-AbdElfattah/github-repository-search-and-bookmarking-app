@@ -1,0 +1,47 @@
+@import "../../scss/variables";
+@import "../../scss/media";
+
+.single-item-container {
+    border: 1px solid $white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(16, 41, 65, 0.6);
+    width: 95%;
+
+    .top-container {
+        display: flex;
+        justify-content: space-between;
+        .name-wrapper{
+            a{
+                color: $white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .content-container{
+        .description{
+            height: 70px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Limit to 3 lines */
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    .action-container{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            background-color: $ligth-blue;
+            padding: 5px;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+    }
+}

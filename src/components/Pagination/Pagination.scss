@@ -1,0 +1,16 @@
+@import "../../scss/variables";
+
+.pagination-wrapper {
+  .MuiButtonBase-root {
+    color: $white !important;
+  }
+  .MuiPaginationItem-page.Mui-selected,
+  .MuiPaginationItem-page.Mui-selected:hover {
+    background-color: transparent !important;
+    color: $black;
+    font-weight: 600;
+  }
+  .MuiPaginationItem-root {
+    margin: 0 !important;
+  }
+}
